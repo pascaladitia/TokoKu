@@ -7,10 +7,13 @@
 
     <color name="gray">#67757D</color>
     <color name="yellow">#FFFAEB</color>
+    <color name="orange">#E5AC00</color>
+    <color name="accent">#00C6B7</color>
     <color name="green">#E7F9EF</color>
     <color name="green_dark">#087938</color>
     <color name="blue">#005EEF</color>
     <color name="blue_dark">#0248B3</color>
+    <color name="red">#F44336</color>
 
     <color name="black50">#FFF6F6</color>
     <color name="black55">#EDEFF3</color>

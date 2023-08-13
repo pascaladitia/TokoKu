@@ -7,6 +7,7 @@
     tools:context=".presentation.login.LoginActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
@@ -16,10 +17,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="32dp"
         android:background="@drawable/bgg_login"
+        android:paddingVertical="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -66,13 +68,13 @@
                 style="@style/text_subContent3"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:background="@drawable/bgg_edt"
-                android:drawableStart="@drawable/ic_username"
-                android:drawableTint="@color/blue"
-                android:drawablePadding="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginRight="32dp"
+                android:background="@drawable/bgg_edt"
+                android:drawableStart="@drawable/ic_username"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/blue"
                 android:padding="8dp"
                 android:textColor="@color/black90"
                 android:textIsSelectable="true" />
@@ -90,14 +92,14 @@
                 style="@style/text_subContent3"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:background="@drawable/bgg_edt"
-                android:drawableStart="@drawable/ic_password"
-                android:drawableTint="@color/blue"
-                android:drawablePadding="4dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginRight="32dp"
                 android:layout_marginBottom="24dp"
+                android:background="@drawable/bgg_edt"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/blue"
                 android:inputType="textPassword"
                 android:padding="8dp"
                 android:textColor="@color/black90"
@@ -120,8 +122,8 @@
             app:layout_constraintTop_toBottomOf="@+id/linear" />
 
         <CheckBox
-            style="@style/text_subContent3"
             android:id="@+id/checkBox"
+            style="@style/text_subContent3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="32dp"
@@ -144,5 +146,15 @@
             app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/progressLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

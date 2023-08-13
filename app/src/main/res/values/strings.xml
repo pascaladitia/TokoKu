@@ -5,7 +5,7 @@
     <string name="login">Login</string>
     <string name="save_username">Save username</string>
     <string name="login_to_your_account">Login to your account</string>
-    <string name="use_your_username_and_password_to_continue">Use your username and password to continue</string>
+    <string name="use_your_username_and_password_to_continue">Use your username and password \nto continue</string>
     <string name="name">Pascal Aditia Muclis</string>
     <string name="position">Marketing Strategist</string>
     <string name="nik">NIK: 3202192930210020</string>

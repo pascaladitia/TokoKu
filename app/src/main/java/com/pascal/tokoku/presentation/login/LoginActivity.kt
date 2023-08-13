@@ -16,6 +16,7 @@ import androidx.lifecycle.lifecycleScope
 import com.pascal.tokoku.R
 import com.pascal.tokoku.common.utils.Constant
 import com.pascal.tokoku.common.utils.PrefLogin
+import com.pascal.tokoku.common.utils.isVisibility
 import com.pascal.tokoku.common.utils.showAlert
 import com.pascal.tokoku.common.wrapper.Resource
 import com.pascal.tokoku.data.network.model.ResponseLogin
@@ -160,6 +161,7 @@ class LoginActivity : AppCompatActivity() {
             val alertDialog = AlertDialog.Builder(this)
             alertDialog.setTitle("Setting GPS")
             alertDialog.setMessage("Mohon Set GPS ke Mode High Accuracy")
+            alertDialog.setCancelable(false)
             alertDialog.setPositiveButton("OK") { dialog, which ->
                 val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
                 startActivity(intent)
@@ -194,9 +196,9 @@ class LoginActivity : AppCompatActivity() {
     private fun showLoading(isVisible: Boolean) {
         binding.apply {
             if (isVisible) {
-
+                isVisibility(progressLogin, true)
             } else {
-
+                isVisibility(progressLogin, false)
             }
         }
     }

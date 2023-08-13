@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
             val alertDialog = AlertDialog.Builder(this)
             alertDialog.setTitle("Setting GPS")
             alertDialog.setMessage("Mohon Set GPS ke Mode High Accuracy")
+            alertDialog.setCancelable(false)
             alertDialog.setPositiveButton("OK") { dialog, which ->
                 val intent = Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS)
                 startActivity(intent)

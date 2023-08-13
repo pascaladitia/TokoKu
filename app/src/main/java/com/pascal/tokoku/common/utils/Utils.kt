@@ -35,19 +35,9 @@ fun Context.showAlert(title: String, msg: String) {
     }.show()
 }
 
-fun Activity.initPermission(): Boolean {
-    return if (SDK_INT >= Build.VERSION_CODES.M) {
-        requestPermissions(
-            arrayOf(
-                Manifest.permission.CAMERA,
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-            ), 1
-        )
-        return true
-    } else {
-        return false
-    }
+fun getCurrentDate():String {
+    val sdf = SimpleDateFormat("dd-MMM-yyyy")
+    return sdf.format(Date())
 }
 
 fun validation(txt: String): String {
@@ -81,20 +71,6 @@ fun formatTime(time: String): String {
     } else {
         return time
     }
-}
-
-fun formatToRupiah(amount: Double): String? {
-    if (amount < 0) {
-        println("Angka tidak boleh negatif.")
-        return null
-    }
-
-    val symbols = DecimalFormatSymbols()
-    symbols.groupingSeparator = '.'
-    symbols.decimalSeparator = ','
-    val df = DecimalFormat("#,##0.00", symbols)
-
-    return "Rp " + df.format(amount)
 }
 
 inline fun <reified T : Parcelable> Intent.parcelable(key: String): T? = when {
