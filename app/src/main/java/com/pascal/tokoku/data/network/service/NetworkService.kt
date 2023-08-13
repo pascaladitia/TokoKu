@@ -3,10 +3,8 @@ package com.pascal.tokoku.data.network.service
 import com.chuckerteam.chucker.api.ChuckerInterceptor
 import com.pascal.tokoku.common.utils.Constant
 import com.pascal.tokoku.data.network.model.ResponseLogin
-import com.pascal.tokoku.data.network.model.ResponsePromo
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
-import okhttp3.RequestBody
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
