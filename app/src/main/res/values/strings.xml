@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TokoKu</string>
+    <string name="title_activity_maps_store">MapsStoreActivity</string>
+    <string name="app_ver_1_0_0">App ver 1.0.0</string>
+    <string name="login">Login</string>
+    <string name="save_username">Save username</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="use_your_username_and_password_to_continue">Use your username and password to continue</string>
+    <string name="name">Pascal Aditia Muclis</string>
+    <string name="position">Marketing Strategist</string>
+    <string name="nik">NIK: 3202192930210020</string>
+    <string name="logout">Logout</string>
+</resources>
