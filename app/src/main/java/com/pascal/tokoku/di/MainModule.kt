@@ -45,7 +45,7 @@ object MainModule {
     object LocalModule {
         @Provides
         @Singleton
-        fun providePokemonDatabase(
+        fun provideLocalDatabase(
             @ApplicationContext context: Context
         ): LocalDatabase = Room
             .databaseBuilder(
@@ -56,7 +56,7 @@ object MainModule {
 
         @Provides
         @Singleton
-        fun providePokemonService(localDatabase: LocalDatabase) = localDatabase.localService()
+        fun provideLocalService(localDatabase: LocalDatabase) = localDatabase.localService()
     }
 
     @Module
